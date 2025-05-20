@@ -93,48 +93,46 @@
 
         <section id="hadid">
           <h2>Заха Хадід</h2>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/4/4b/Zaha_Hadid_in_Heydar_Aliyev_Cultural_center_in_Baku_nov_2013.jpg"
-            alt="Заха Хадід"
-          />
-          <p><strong>Дата народження:</strong> 31 жовтня 1950, Багдад, Ірак.</p>
-          <p>
-            <strong>Освіта:</strong> Американський університет у Бейруті;
-            Архітектурна асоціація в Лондоні.
-          </p>
-          <p>
-            Заха Хадід була британською архітекторкою іракського походження,
-            першою жінкою, яка отримала Прітцкерівську премію. Її стиль
-            вирізняється динамічними формами та футуристичним підходом.
-          </p>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/3/3e/Heydar_Aliyev_Center_Baku_2014.jpg"
-            alt="Центр Гейдара Алієва"
-          />
+          <div class="flex_box">
+            <img class="img" src="foto/zaha_hadid_1.webp" alt="Заха Хадід" />
+            <p>
+              <strong>Дата народження:</strong> 31 жовтня 1950, Багдад, Ірак.
+            </p>
+            <p>
+              <strong>Освіта:</strong> Американський університет у Бейруті;
+              Архітектурна асоціація в Лондоні.
+            </p>
+            <p>
+              Заха Хадід була британською архітекторкою іракського походження,
+              першою жінкою, яка отримала Прітцкерівську премію. Її стиль
+              вирізняється динамічними формами та футуристичним підходом.
+            </p>
+            <img
+              class="img"
+              src="foto/zaha_hadid_2.webp"
+              alt="Центр Гейдара Алієва"
+            />
+          </div>
         </section>
 
         <section id="corbusier">
           <h2>Ле Корбюзьє</h2>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/2/2b/Le_Corbusier_1933.jpg"
-            alt="Ле Корбюзьє"
-          />
-          <p>
-            <strong>Дата народження:</strong> 6 жовтня 1887, Ла-Шо-де-Фон,
-            Швейцарія.
-          </p>
-          <p>
-            <strong>Освіта:</strong> Місцева школа мистецтв у Ла-Шо-де-Фоні.
-          </p>
-          <p>
-            Ле Корбюзьє був французьким архітектором швейцарського походження,
-            одним із піонерів сучасної архітектури. Його підхід базувався на
-            функціональності та мінімалізмі.
-          </p>
-          <img
-            src="https://upload.wikimedia.org/wikipedia/commons/9/9c/Villa_Savoye_2010.jpg"
-            alt="Вілла Савой"
-          />
+          <div class="flex_box">
+            <img class="img" src="foto/le_ko_1.webp" alt="Ле Корбюзьє" />
+            <p>
+              <strong>Дата народження:</strong> 6 жовтня 1887, Ла-Шо-де-Фон,
+              Швейцарія.
+            </p>
+            <p>
+              <strong>Освіта:</strong> Місцева школа мистецтв у Ла-Шо-де-Фоні.
+            </p>
+            <p>
+              Ле Корбюзьє був французьким архітектором швейцарського походження,
+              одним із піонерів сучасної архітектури. Його підхід базувався на
+              функціональності та мінімалізмі.
+            </p>
+            <img class="img" src="foto/le_ko_2.webp" alt="Вілла Савой" />
+          </div>
         </section>
 
         <section id="mies">
@@ -282,6 +280,32 @@
           />
         </section>
       </main>
+
+      <footer class="footer">
+        <p class="copyright">&copy; 2025 Всі права захищено.</p>
+        <p class="author">Роботу виконав А. С. Мінчаков</p>
+      </footer>
     </div>
+
+    <button id="scrollToTopBtn" title="Вгору">↑</button>
+
+    <script>
+      const scrollToTopBtn = document.getElementById("scrollToTopBtn");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          scrollToTopBtn.style.display = "block";
+        } else {
+          scrollToTopBtn.style.display = "none";
+        }
+      });
+
+      scrollToTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
+      });
+    </script>
   </body>
 </html>
