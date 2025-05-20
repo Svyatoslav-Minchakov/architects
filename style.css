@@ -73,7 +73,7 @@ body.page {
       rgba(0, 0, 0, 0.6),
       rgba(0, 0, 0, 0)
     ),
-    url(/foto/hero.webp);
+    url(foto/hero.webp);
   background-size: cover;
   background-position: center center;
   height: 100vh;
@@ -109,4 +109,9 @@ body.page {
 .flex_box {
   display: flex;
   flex-wrap: wrap;
+}
+
+h2 {
+  width: 100%;
+  text-align: center;
 }
