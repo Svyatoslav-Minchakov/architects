@@ -10,7 +10,7 @@ body.page {
 
 /* Шапка */
 .header {
-  background-color: #004080;
+  background-color: #686b6e;
   padding: 1rem 0;
 }
 
@@ -26,12 +26,27 @@ body.page {
   list-style: none;
   padding: 0;
   margin: 0;
+  text-decoration: none;
 }
 
 .nav__link {
-  color: #ffffff;
+  display: inline-block;
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #ffffff;
+  color: #333333;
   text-decoration: none;
   font-weight: bold;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+
+.nav__link:hover {
+  background-color: #5c5656;
+  color: #ffffff;
+  box-shadow: 0 6px 12px rgba(19, 18, 18, 0.3);
+  transform: translateY(-2px);
 }
 
 .nav__link:hover {
@@ -109,6 +124,10 @@ body.page {
 .flex_box {
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column; /* або row, якщо потрібно в ряд */
+  align-items: center; /* центрує по горизонталі */
+  justify-content: center; /* опційно — по вертикалі */
+  text-align: center;
 }
 
 h2 {
