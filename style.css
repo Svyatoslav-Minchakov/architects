@@ -14,10 +14,10 @@ body.page {
   padding: 1rem 0;
 }
 
-.nav {
+/* .nav {
   display: flex;
   justify-content: center;
-}
+} */
 
 .nav__list {
   display: flex;
@@ -68,7 +68,12 @@ body.page {
 /* Hero-блок */
 .hero {
   text-align: center;
-  background-image: url(/foto/hero1.webp);
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0)
+    ),
+    url(/foto/hero.webp);
   background-size: cover;
   background-position: center center;
   height: 100vh;
