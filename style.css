@@ -4,11 +4,15 @@ body.page {
   margin: 0;
   padding: 0;
   background-color: #ffffff;
-  color: #212529;
+  color: #353a3f;
   line-height: 1.6;
+
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
 }
 
-/* Шапка */
 .header {
   background-color: #686b6e;
   padding: 1rem 0;
@@ -20,11 +24,6 @@ body.page {
   padding: 0;
   padding-bottom: 10px;
   padding-top: 10px;
-
-  /* .nav {
-  display: flex;
-  justify-content: center;
-} */
 
   .nav__list {
     display: flex;
@@ -46,13 +45,14 @@ body.page {
   margin: 5px;
   background-color: #ece8e8;
   color: #333333;
-  text-decoration: none;
+
   font-weight: bold;
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
   transition: all 0.3s ease;
   min-width: 200px;
   text-align: center;
+  text-decoration: none;
 }
 
 .nav__link:hover {
@@ -60,10 +60,6 @@ body.page {
   color: #ffffff;
   box-shadow: 0 6px 12px rgba(8, 8, 8, 0.3);
   transform: translateY(-2px);
-}
-
-.nav__link:hover {
-  text-decoration: underline;
 }
 
 /* Основний контент */
@@ -107,16 +103,21 @@ section {
   background-size: cover;
   background-position: center center;
   height: 100vh;
-  padding-top: 150px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
 }
 
 .hero__title {
   font-size: 3.5rem;
   color: #ffffff;
+  max-height: 100px;
 }
 
 .hero__text {
-  font-size: 2.1rem;
+  font-size: 1.3rem;
   color: #ffffff;
 }
 
@@ -139,9 +140,9 @@ section {
 .flex_box {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: column; /* або row, якщо потрібно в ряд */
-  align-items: center; /* центрує по горизонталі */
-  justify-content: center; /* опційно — по вертикалі */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
 }
 
@@ -202,4 +203,8 @@ h2 {
   text-align: center;
   font-size: 1.4rem;
   font-weight: bold;
+}
+
+p {
+  max-width: 860px;
 }
