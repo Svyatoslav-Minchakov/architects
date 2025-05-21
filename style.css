@@ -208,3 +208,6 @@ h2 {
 p {
   max-width: 860px;
 }
+.padding {
+  padding: 15px;
+}
